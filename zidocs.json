@@ -1,0 +1,22 @@
+{
+  "name": "Zidocs",
+  "logo": {
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
+  },
+  "favicon": "/logo.png",
+  "colors": {
+    "primary": "#E80F88",
+    "light": "#AE87FF",
+    "dark": "#0D001D",
+    "background": {
+      "dark": "#0C0C0C"
+    }
+  },
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": ["quickstart"]
+    }
+  ]
+}
