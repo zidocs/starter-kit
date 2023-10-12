@@ -15,8 +15,8 @@
   },
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["quickstart"]
+      "group": "Getting Started",
+      "pages": ["quickstart", "development"]
     }
   ]
 }
