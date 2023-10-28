@@ -13,10 +13,20 @@
       "dark": "#0C0C0C"
     }
   },
+  "tabs": [
+    {
+      "name": "Writing Content",
+      "groups": ["Writing Content"]
+    }
+  ],
   "navigation": [
     {
       "group": "Getting Started",
       "pages": ["quickstart", "development"]
+    },
+    {
+      "group": "Writing Content",
+      "pages": ["content/page", "content/text"]
     }
   ]
 }
