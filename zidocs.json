@@ -16,7 +16,7 @@
   "tabs": [
     {
       "name": "Writing Content",
-      "groups": ["Writing Content"]
+      "groups": ["Writing Content", "Context Components"]
     }
   ],
   "navigation": [
@@ -26,7 +26,11 @@
     },
     {
       "group": "Writing Content",
-      "pages": ["content/page", "content/text"]
+      "pages": ["content/page", "content/text", "content/code"]
+    },
+    {
+      "group": "Context Components",
+      "pages": ["content/components/callouts"]
     }
   ]
 }
