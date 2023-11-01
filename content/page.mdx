@@ -7,7 +7,7 @@ description: "Setting the title and metadata for navigation and SEO"
 
 Each page is an MDX file that should begin with the following metadata syntax with `---` at the start and end:
 
-```plaintext /title/1
+```mdx
 ---
 title: [title of the page]
 ---
@@ -15,7 +15,7 @@ title: [title of the page]
 
 Other metadata goes in between the same --- lines. For example, this page uses this metadata:
 
-```plaintext /title/1 /description/1
+```mdx
 ---
 title: "Page Titles and Metadata"
 description: "Metadata is important for API pages and SEO optimization"
@@ -26,19 +26,6 @@ description: "Metadata is important for API pages and SEO optimization"
 
 You can show a description that shows directly under the title with the description metadata.
 
-```plaintext /description/1
+```mdx
 description: "Your description goes here."
-```
-
-## :construction: Under Construction :construction:
-
-### Sidebar Title
-
-You can show a different title in the navigation with the sidebarTitle metadata. This is useful if your title is long and you want something shorter in the navigation links.
-
-```plaintext /title/1 /sidebarTitle/1
----
-title: "Your very long page title you want to shorten"
-sidebarTitle: "Short title"
----
 ```
