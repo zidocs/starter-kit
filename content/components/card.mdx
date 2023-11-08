@@ -1,0 +1,31 @@
+---
+title: "Cards"
+description: "Highlight main points or links with customizable icons"
+---
+
+<Card title="Card Title" icon="link" href="/content/components/card-group">
+  This is how you use a card with an icon and a link. Clicking on this card
+  brings you to the Card Group page.
+</Card>
+
+
+```js
+<Card title="Click on me" icon="link" href="/content/components/card-group">
+  This is how you use a card with an icon and a link. Clicking on this card
+  brings you to the Card Group page.
+</Card>
+```
+
+## Props
+
+<ResponseField name="title" type="string" required>
+  The title of the card
+</ResponseField>
+
+<ResponseField name="icon" type="string">
+  A [Lucide icon](https://lucide.dev/icons).
+</ResponseField>
+
+<ResponseField name="href" type="string">
+  The url that clicking on the card would navigate the user to
+</ResponseField>

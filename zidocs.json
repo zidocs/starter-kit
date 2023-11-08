@@ -16,7 +16,7 @@
   "tabs": [
     {
       "name": "Writing Content",
-      "groups": ["Writing Content", "Context Components"]
+      "groups": ["Writing Content", "Organization Components","Context Components"]
     }
   ],
   "navigation": [
@@ -26,15 +26,19 @@
     },
     {
       "group": "Styling",
-      "pages": ["settings/global"]
+      "pages": ["settings/global", "settings/navigation"]
     },
     {
       "group": "Writing Content",
       "pages": ["content/page", "content/text", "content/image-embeds","content/code", "content/list-table", "content/reusable-snippets"]
     },
     {
+      "group": "Organization Components",
+      "pages": ["content/components/accordion", "content/components/card", "content/components/card-group"]
+    },
+    {
       "group": "Context Components",
-      "pages": ["content/components/callouts"]
+      "pages": ["content/components/callouts", "content/components/code", "content/components/image"]
     }
   ]
 }

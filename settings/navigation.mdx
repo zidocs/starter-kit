@@ -1,0 +1,83 @@
+---
+title: "Navigation"
+description: "Organize your docs directory to guide your users to the information they need "
+---
+
+<Warning>
+  Note, folders cannot be named `api` due to NextJS limitations. Please try
+  `api-reference` as an alternative.
+</Warning>
+
+## Tabs
+
+Tabs help distinguish between different topics or sections of your documentation. They show up above the main sidebar. Example: `Documentation` `Writing Content`
+
+Configure tabs with the `tabs` field of the `zidocs.json` file. The `url` field of the tab object should map to a folder of content added to your sidebar, or an external link.
+
+```json
+"tabs": [
+    {
+        "name": "API References",
+        "url": "api-references"
+    },
+    {
+        "name": "Content",
+        "url": "content"
+    },
+    {
+        "name": "Blog",
+        "url": "https://your-website.com/blog"
+    }
+]
+```
+
+To configure the default `Documentation` primary tab, add the `primaryTab` field to your `zidocs.json` file with your desired name. Any files in your navigation not in a folder reserved by another tab will show up in the primary tab.
+
+```json
+"primaryTab": {
+    "name": "Home"
+}
+```
+
+## Sidebar
+
+Our sidebar navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+
+<Info>
+  Once you add a page to your docs directory, you'll need to add the path to
+  `zidocs.json` to add it to the sidebar. Pages do not show up automatically.
+</Info>
+
+
+```json Regular Navigation
+"navigation": [
+    {
+        "group": "Getting Started",
+        "pages": ["quickstart"]
+    }
+]
+```
+
+
+### Folders
+
+Simply put your MDX files in folders and update the paths in `zidocs.json`.
+
+For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+
+<Warning>
+  You cannot use `api` for the name of a folder unless you nest it inside
+  another folder. Zidocs uses Next.js which reserves the top-level `api`
+  folder for internal server calls. We recommend using the folder name
+  `api-reference` instead.
+</Warning>
+
+
+```json Navigation With Folder
+"navigation": [
+    {
+        "group": "Group Name",
+        "pages": ["your-folder/your-page"]
+    }
+]
+```
