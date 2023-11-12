@@ -3,7 +3,7 @@ title: Quickstart
 description: "Start building awesome documentation in under 5 minutes"
 ---
 
-<img src="/starter-kit/images/docs.png" />
+<Image src="/starter-kit/images/docs.png" />
 
 ## Getting Started with Zidocs
 
@@ -11,24 +11,40 @@ Welcome to the Zidocs documentation guide. Follow the instructions below to lear
 
 ### 1. Deploying Your Docs Repository
 
-Zidocs docs are rendered from MDX files and configurations defined in our starter template. We use Github to integrate your docs with your code, and make source control effortless.
+Zidocs docs are rendered from MDX files and configurations defined in our starter template.
 
 <Accordion icon="github" title="Creating Your Documentation Repository">
-  If you’ve created a docs repo in our onboarding, this step is complete. You can find your docs repository on your Zidocs dashboard.
-        
-  To create your docs repo without logging into Github, follow these instructions:
+  To create your docs repo, follow these instructions:
 
   1. Clone our [starter-kit](https://github.com/zidocs/starter-kit) into a new public repo. You can make the repo private later.
-  2. Get in touch with our team to deploy your repo.
+  2. Then install zidocs CLI globally in your computer with:
+  ```bash
+  npm install zidocs --globally
+  ```
+  3. Finally you can build your documentation with:
+  ```bash
+  npm run build
+  ```
+  It will show up as .next in your documentation folder.
 </Accordion>
+
+<Accordion icon="triangle" title="Deploying Your Documentation in Vercel">
+  To deploy your docs repo in Vercel, follow these instructions:
+
+  1. Added your project to Vercel.
+  2. Then go into settings and put these configurations to your project.
+    <Image className="rounded-md hidden dark:block" src="https://zidocs-assets.nyc3.cdn.digitaloceanspaces.com/settingsvercel.png"/>
+    <Image className="rounded-md block dark:hidden" src="https://zidocs-assets.nyc3.cdn.digitaloceanspaces.com/settingsvercel-light.png"/>
+  3. And run a new deployment.
+  4. Congratulations, your app is already deployed! Easy right?
+</Accordion>
+
+<Warning>It's in my backlog the creation of an github app to automatically deploy your documentation.</Warning> 
+
 
 ### 2. Updating Your Docs
 
 Zidocs enables you to easily customize the style, structure, and content of your docs.
-
-### 3. Supercharging Your Docs
-
-Zidocs supports an array of advanced features like API reference docs, analytics, and versioning to accommodate any of your documentation needs.
 
 ### All Done!
 

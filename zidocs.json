@@ -6,11 +6,11 @@
   },
   "favicon": "/logo.png",
   "colors": {
-    "primary": "#E80F88",
+    "primary": "#1EC3F0",
     "light": "#AE87FF",
     "dark": "#0D001D",
     "background": {
-      "dark": "#0C0C0C"
+      "dark": "#020A0D"
     }
   },
   "tabs": [
