@@ -1,0 +1,32 @@
+---
+title: "Accordion Group"
+description: "Group multiple accordions into a single display."
+icon: "table-list"
+---
+
+Simply add `<AccordionGroup>` around your existing `<Accordion>` components.
+
+<AccordionGroup>
+  <Accordion title="FAQ without Icon">
+    You can put other components inside Accordions.
+
+    ```java HelloWorld.java
+    class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+    ```
+
+  </Accordion>
+
+  <Accordion title="FAQ with Icon" icon="globe">
+    Check out the [Accordion](/content/components/accordion) docs for all the supported props.
+  </Accordion>
+  
+  <Accordion title="FAQ without Icon">
+    Check out the [Accordion](/content/components/accordion) docs for all the supported props.
+  </Accordion>
+</AccordionGroup>
+
+`AccordionGroup` does not have any props.
