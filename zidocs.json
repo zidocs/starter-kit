@@ -38,7 +38,7 @@
     },
     {
       "group": "Context Components",
-      "pages": ["content/components/callouts", "content/components/code", "content/components/image"]
+      "pages": ["content/components/callouts", "content/components/code", "content/components/code-group", "content/components/image"]
     }
   ]
 }
