@@ -34,7 +34,7 @@
     },
     {
       "group": "Organization Components",
-      "pages": ["content/components/accordion", "content/components/accordion-group", "content/components/card", "content/components/card-group"]
+      "pages": ["content/components/accordion", "content/components/accordion-group", "content/components/card", "content/components/card-group", "content/components/steps"]
     },
     {
       "group": "Context Components",
