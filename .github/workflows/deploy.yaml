@@ -8,6 +8,7 @@ on:
 permissions:
   contents: read
   pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -22,15 +23,20 @@ jobs:
         with:
           node-version: "18"
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Instalar dependências
-        run: npm install -g zidocs && zidocs build:vercel
+        run: npm install -g zidocs
 
       - name: Exportar aplicativo Next.js para conteúdo estático
-        run: npm run build
+        run: zidocs build:vercel
 
-      - name: Publicar no GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.next
-          publish_branch: gh-pages
+          path: ./.next
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
