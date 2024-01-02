@@ -28,5 +28,3 @@ SOON
 #### Troubleshooting
 
 - zidocs dev isn't running - Run `zidocs install` it'll re-install dependencies.
-
-  .
