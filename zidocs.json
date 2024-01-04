@@ -1,5 +1,6 @@
 {
   "name": "Zidocs",
+  "repoName": "starter-kit",
   "logo": {
     "dark": "/logo/dark.png",
     "light": "/logo/light.png"
