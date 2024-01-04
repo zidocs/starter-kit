@@ -5,10 +5,8 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: 
+  contents: write
 
 jobs:
   deploy:
@@ -30,13 +28,11 @@ jobs:
         run: npm install -g zidocs
 
       - name: Exportar aplicativo Next.js para conteúdo estático
-        run: zidocs build
+        run: zidocs build && touch ./out/.nojekyll
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
-          path: ./out
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: public # The branch the action will deploy to
+          FOLDER: out # The folder the action will deploy to
