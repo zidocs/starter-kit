@@ -28,7 +28,7 @@ jobs:
         run: npm install -g zidocs
 
       - name: Exportar aplicativo Next.js para conteúdo estático
-        run: zidocs build && touch ./out/.nojekyll && echo "ENVIRONMENT=production" > .env
+        run: zidocs build && touch ./out/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.1
